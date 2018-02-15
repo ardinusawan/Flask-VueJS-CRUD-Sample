@@ -1,0 +1,198 @@
+{
+	"variables": [],
+	"info": {
+		"name": "flask-kurio",
+		"_postman_id": "36a38538-4827-1072-0c08-900564041759",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/article",
+			"request": {
+				"url": "localhost:5000/article",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "enctype",
+						"value": "multipart/form-data",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "q",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "testtd",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": "Add new article"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/article",
+			"request": {
+				"url": "localhost:5000/article",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "View all article"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/article",
+			"request": {
+				"url": "localhost:5000/article/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "enctype",
+						"value": "multipart/form-data",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "q",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "testtd",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": "Remove article"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/article",
+			"request": {
+				"url": "localhost:5000/article/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "enctype",
+						"value": "multipart/form-data",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "this is title",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "this is content",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"type": "file",
+							"src": "111290.jpg"
+						}
+					]
+				},
+				"description": "Edit article with id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/article",
+			"request": {
+				"url": "localhost:5000/article/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "enctype",
+						"value": "multipart/form-data",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "title",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "this is content",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "file",
+							"value": "",
+							"type": "file",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Edit article with id"
+			},
+			"response": []
+		}
+	]
+}
