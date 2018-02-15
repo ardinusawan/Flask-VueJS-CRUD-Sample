@@ -1,4 +1,4 @@
-# Frontend
+# Frontend (vuejs-frontend)
 How to run:
 
 Install dependency
@@ -11,7 +11,7 @@ $ npm run dev
 ```
 Server run in http://localhost:8080
 
-# Backend
+# Backend (flask-backend)
 How to run:
 
 Installing virtual environment
@@ -41,6 +41,7 @@ $ python article.py
 Server run in http://localhost:5000
 
 # Unit Test
+This unit test only for *flask-backend*. Run it from 'flask-backend' folder.
 ```sh
 $ python test/article_test.py
 ```
