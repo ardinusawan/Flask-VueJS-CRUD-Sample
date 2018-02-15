@@ -40,6 +40,11 @@ $ python article.py
 ```
 Server run in http://localhost:5000
 
+# Unit Test
+```sh
+$ python test/article_test.py
+```
+
 License
 ----
 
