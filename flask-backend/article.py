@@ -106,7 +106,7 @@ def article_detail(id):
 
 
 # endpoint to update article
-@app.route("/article/<id>", methods=["PUT"])
+@app.route("/article/<id>", methods=["PUT", "PATCH"])
 def article_update(id):
     article = Article.query.get(id)
     article.title = request.form['title'] if 'title' in request.form else article.title
