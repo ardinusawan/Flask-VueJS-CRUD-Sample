@@ -16,19 +16,27 @@ How to run:
 
 Installing virtual environment
 ```sh
-virtualenv -p python3 venv
+$ virtualenv -p python3 venv
 ```
 Load environment
 ```sh
-source venv/bin/activate
+$ source venv/bin/activate
 ```
 Installing dependency
 ```sh
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
+For first time instalation, create database if not exist
+```sh
+$ python
+>>> from article import db
+>>> db.create_all()
+>>> exit()
+```
+
 Run app
 ```sh
-python article.py
+$ python article.py
 ```
 Server run in http://localhost:5000
 
